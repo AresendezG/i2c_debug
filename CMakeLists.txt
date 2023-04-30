@@ -1,0 +1,10 @@
+add_executable(i2c_comm
+    i2c_comm.c
+    )
+target_link_libraries(i2c_comm
+    pico_i2c_slave
+    hardware_i2c
+    pico_stdlib
+    )
+pico_add_extra_outputs(i2c_comm)
+example_auto_set_url(i2c_comm)
